@@ -33,11 +33,15 @@
 
       /* Write CSS Here */
 
+      /* Two Column Grid (Icon Pattern) */
+
       .two-column-grid__expand-two {
         display: grid;
         grid-template: ". ." / auto 1fr;
         grid-gap: 4px;
       }
+
+      /* Three Column Grid */
 
       .three-column-grid {
         display: grid;
@@ -45,11 +49,15 @@
         grid-gap: 4px;
       }
 
+      /* Three Column Grid with Expansion */
+
       .three-column-grid__expand-two {
         display: grid;
         grid-template: ". . ." / auto 1fr auto;
         grid-gap: 4px;
       }
+
+      /* Five Column Grid */
 
       .five-column-grid {
         display: grid;
@@ -57,10 +65,14 @@
         grid-gap: 4px;
       }
 
+      /* Center Grid */
+
       .center-grid {
         display: grid;
         place-items: center;
       }
+
+      /* Grid within Grid #1 */
 
       .two-column-grid-two {
         display: grid;
@@ -80,6 +92,18 @@
       .box-two {
         display: grid;
         grid-template: ". . . . ." / 1fr 1fr 1fr 1fr 1fr;
+      }
+
+      /* Grid within Grid #2 (Expansion) */
+
+      .last-container {
+        display: grid;
+        grid-template: ". . ." / auto 1fr auto;
+      }
+
+      .last-box {
+        display: grid;
+        grid-template: ". . ." / 1fr 1fr 1fr;
       }
     </style>
   </head>
@@ -144,14 +168,14 @@
 
     <div>
       <h2>Grid within Grid #2 (Expansion)</h2>
-      <div class="main-container">
+      <div class="container last-container">
         <div class="box">
-          <div class="inner-box-three"></div>
+          <div class="inner-box"></div>
         </div>
-        <div class="box-two expand">
+        <div class="box expand">
           <div class="inner-box width-sm"></div>
         </div>
-        <div class="box">
+        <div class="box last-box">
           <div class="inner-box"></div>
           <div class="inner-box"></div>
           <div class="inner-box"></div>
